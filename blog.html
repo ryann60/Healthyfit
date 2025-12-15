@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Healthyfit</title>
+  <meta name="description" content="Explore our collection of health and fitness articles">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">H</div>
+        <span class="logo-text">Healthyfit</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      </nav>
+    </div>
+  </header>
+<div style="background: var(--color-surface); border-bottom: 1px solid var(--color-border);">
+    <div class="container" style="padding: 3rem 1rem;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">All Articles</h1>
+      <p style="font-size: 1.125rem; color: var(--color-text-secondary);">
+        Explore our collection of health and fitness articles
+      </p>
+    </div>
+  </div>
+<div class="container" style="margin-top: 2rem;">
+    <!-- Search and Filter -->
+    <div style="margin-bottom: 2rem;">
+      <input 
+        type="text" 
+        id="searchInput"
+        placeholder="Search articles..." 
+        style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.5rem; background: var(--color-bg); color: var(--color-text); font-size: 1rem; margin-bottom: 1rem;"
+      >
+      
+      <select id="categoryFilter" style="padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.5rem; background: var(--color-bg); color: var(--color-text); font-size: 1rem;">
+        <option value="all">All Categories</option>
+        <option value="Nutrition">Nutrition</option>
+        <option value="Fitness">Fitness</option>
+        <option value="Mental Health">Mental Health</option>
+        <option value="Weight Loss">Weight Loss</option>
+        <option value="Muscle Building">Muscle Building</option>
+        <option value="Yoga">Yoga</option>
+        <option value="Running">Running</option>
+        <option value="Wellness">Wellness</option>
+        <option value="Healthy Recipes">Healthy Recipes</option>
+        <option value="Lifestyle">Lifestyle</option>
+      </select>
+    </div>
+<div class="two-column">
+      <div>
+        <p style="margin-bottom: 1.5rem; color: var(--color-text-secondary); font-size: 0.875rem;">
+          Showing all articles
+        </p>
+        
+        <div class="posts-grid" id="postsContainer">
+          <!-- Repeat post cards here with data-category attribute -->
+          <!-- Post 1 -->
+<a href="posts/post.html" class="post-card" data-category="Lifestyle">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400" alt="Morning Habits" class="post-image">
+            <div class="post-content">
+              <span class="post-category">Lifestyle</span>
+              <div class="post-meta">
+                <span>📅 Jan 15, 2025</span>
+                <span>⏱️ 8 min</span>
+              </div>
+              <h3>10 Morning Habits That Will Transform Your Health</h3>
+              <p>Start your day right with these science-backed morning rituals...</p>
+            </div>
+          </a>
+          <!-- Post 2 -->
+<a href="posts/post2.html" class="post-card" data-category="Fitness">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400" alt="HIIT" class="post-image">
+            <div class="post-content">
+              <span class="post-category">Fitness</span>
+              <div class="post-meta">
+                <span>📅 Jan 14, 2025</span>
+                <span>⏱️ 10 min</span>
+              </div>
+              <h3>Complete Guide to HIIT Training</h3>
+              <p>Maximize fat burn and build endurance with HIIT workouts...</p>
+            </div>
+          </a>
+          <!-- Post 3 -->
+<a href="posts/post3.html" class="post-card" data-category="Nutrition">
+            <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400" alt="Mediterranean" class="post-image">
+            <div class="post-content">
+              <span class="post-category">Nutrition</span>
+              <div class="post-meta">
+                <span>📅 Jan 13, 2025</span>
+                <span>⏱️ 9 min</span>
+              </div>
+              <h3>The Mediterranean Diet: Complete Guide</h3>
+              <p>Discover the world's healthiest eating pattern...</p>
+            </div>
+          </a>
+          <!-- Post 4 -->
+<a href="posts/post4.html" class="post-card" data-category="Muscle Building">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400" alt="Strength Training" class="post-image">
+            <div class="post-content">
+              <span class="post-category">Muscle Building</span>
+              <div class="post-meta">
+                <span>📅 Jan 15, 2025</span>
+                <span>⏱️ 11 min</span>
+              </div>
+              <h3>Strength Training for Women: Myths Debunked</h3>
+              <p>Breaking down common misconceptions about women and weightlifting...</p>
+            </div>
+          </a>
+          <!-- Post 5 -->
+<a href="posts/post5.html" class="post-card" data-category="Healthy Recipes">
+            <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?w=400" alt="Meal Prep" class="post-image">
+            <div class="post-content">
+              <span class="post-category">Healthy Recipes</span>
+              <div class="post-meta">
+                <span>📅 Jan 11, 2025</span>
+                <span>⏱️ 12 min</span>
+              </div>
+              <h3>Meal Prep Like a Pro: Save Time and Eat Healthier</h3>
+              <p>Master the art of meal prepping with this comprehensive guide...</p>
+            </div>
+          </a>
+          <!-- Post 6 -->
+<a href="posts/post6.html" class="post-card" data-category="Nutrition">
+            <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=400" alt="Macros" class="post-image">
+            <div class="post-content">
+              <span class="post-category">Nutrition</span>
+              <div class="post-meta">
+                <span>📅 Jan 9, 2025</span>
+                <span>⏱️ 15 min</span>
+              </div>
+              <h3>Understanding Macros: The Complete Guide to Tracking</h3>
+              <p>Learn what macronutrients are, why they matter, and how to calculate...</p>
+            </div>
+          </a>
+          <!-- Add more posts as needed -->
+        </div>
+      </div>
+<div class="sidebar">
+        <!-- Ad Space -->
+        <!-- <div class="ad-space-sidebar">
+           Insert your ad code here 
+        </div> -->
+<!-- Popular Posts -->
+        <div class="sidebar-widget">
+          <h3>🔥 Popular Posts</h3>
+          <div>
+            <a href="posts/post2.html" class="popular-post">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=100" alt="" class="popular-post-image">
+              <div>
+                <h4>Complete Guide to HIIT Training</h4>
+                <p>10 min read</p>
+              </div>
+            </a>
+            <a href="posts/post3.html" class="popular-post">
+              <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=100" alt="" class="popular-post-image">
+              <div>
+                <h4>Mediterranean Diet Guide</h4>
+                <p>9 min read</p>
+              </div>
+            </a>
+          </div>
+        </div>
+<!-- Categories -->
+        <!-- <div class="sidebar-widget">
+          <h3>📁 Categories</h3>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 0.5rem;"><a href="blog.html?category=Nutrition" style="text-decoration: none; color: var(--color-text);">Nutrition</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="blog.html?category=Fitness" style="text-decoration: none; color: var(--color-text);">Fitness</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="blog.html?category=Wellness" style="text-decoration: none; color: var(--color-text);">Wellness</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <!-- Ad Space - Footer
+      <div class="ad-space-footer">
+        Insert your ad code here 
+      </div> -->
+<div class="footer-grid">
+        <div class="footer-section">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <div class="logo-icon" style="width: 40px; height: 40px;">H</div>
+            <span class="logo-text" style="font-size: 1.25rem;">Healthyfit</span>
+          </div>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem;">
+            Your trusted source for health, fitness, nutrition, and wellness advice. 
+            Empowering you to live a healthier, happier life.
+          </p>
+        </div>
+<div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+<div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+<div class="footer-bottom">
+        <p>&copy; 2025 Healthyfit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
