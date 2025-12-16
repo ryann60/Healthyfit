@@ -27,3 +27,9 @@ Reminders
 ================
 - Check every page is there's bugs
 - Check every link if it's connected to the right path
+
+git 
+- git status
+- git add .
+- git commit -m "Clear, brief message describing the change"
+- git push origin main
